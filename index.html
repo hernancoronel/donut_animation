@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="/assets/donut.png">
+  <title>Donut Ascii Animation Visual</title>
+  <style>
+    body {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+      margin: 0; /* Añadir margen cero para asegurar que no haya desbordamiento */
+      overflow: hidden; /* Para ocupar toda la ventana */
+    }
+    canvas {
+      display: block; /* Asegura que el canvas se comporte como un bloque */
+      margin: auto; /* Centra el canvas horizontalmente dentro de su contenedor */
+    }
+  </style>
+</head>
+<body>
+  <!-- Tamaño basado en 80x22 caracteres -->
+  <canvas id="asciiCanvas" width="1024" height="768"></canvas> 
+  <script src="/donut.js"></script>
+</body>
+</html>
